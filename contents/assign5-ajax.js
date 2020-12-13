@@ -10,10 +10,16 @@ window.onload = function() {
     //Store the 'Schedule' text area as a variable
     var scheduleTable = document.getElementById('schedTbl');
 
+    //When there is a change made to 'oldCityHall', fire this function
     oldCityHall.onchange = function () {
+        //IF the 'oldCityHall' isn't checked, do nothing
         if (!oldCityHall.checked) {
             return;
         }
+
+        //set 'xhr' to a new HTTP request
+
+        // RAN OUT OF TIME FOR COMMENTING FURTHER, SORRY SEAN :)
         var xhr = new XMLHttpRequest();
 
         xhr.onreadystatechange = function (){
